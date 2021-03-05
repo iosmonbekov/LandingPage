@@ -1,0 +1,243 @@
+/* Import of Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap");
+
+/* Basic styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+body {
+    font-family: "Libre Franklin";
+    color: #333333;
+}
+.container {
+    max-width: 1127px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+/* Header  */
+.header {
+    background: url("./assets/images/bg.jpg") center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.header__wrapper {
+    background-color: rgba(198, 108, 73, 0.3);
+    padding: 97px 0 240px;
+}
+.menu-burger {
+    display: none;
+}
+.menu {
+    margin: 0px 0 141px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+}
+.menu__list li {
+    margin-left: 60px;
+}
+.menu__list li:hover {
+    font-weight: 700;
+}
+.menu__list li:first-child {
+    margin: 0;
+}
+.menu__logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+.header__title {
+    font-size: 64px;
+    font-weight: 400;
+}
+.header__sub-title {
+    font-size: 24px;
+    margin: 26px 0px 106px;
+}
+.header__link {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* About section */
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.text {
+    font-size: 18px;
+    line-height: 30px;
+}
+.about__wrapper {
+    padding: 93px 10px 115px;
+}
+.about__title {
+    margin-bottom: 76px;
+}
+
+.about__content p:first-child {
+    margin-bottom: 20px;
+}
+
+/* Skills section */
+.skills {
+    background-color: rgba(255, 250, 242, 1);
+}
+.skills__wrapper {
+    padding: 93px 10px 145px;
+}
+.skills__title {
+    margin-bottom: 86px;
+}
+.skills__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills__image {
+    flex: 0 1 350px;
+    height: 340px;
+}
+.skills__info {
+    flex: 0 1 635px;
+    margin-left: 10px;
+}
+.skills__info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.skills__info > div:first-child {
+    margin-bottom: 65px;
+}
+.skills__info > div:last-child {
+    margin-bottom: 0px;
+}
+.skills__info_text {
+    font-size: 18px;
+}
+.skills__info_title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.skills__info_graph,
+.skills__info_text {
+    height: 24px;
+    width: 446px;
+}
+
+.skills__info_graph > div {
+    background-color: rgba(198, 108, 73, 1);
+    height: 24px;
+}
+
+.skills__info_graph {
+    background-color: rgba(245, 214, 171, 1);
+}
+
+.graph1 {
+    width: 381px;
+}
+.graph2 {
+    width: 351px;
+}
+.graph3 {
+    width: 286px;
+}
+
+/* Portfolio Section */
+.portfolio__wrapper {
+    padding: 93px 10px 145px;
+}
+.portfolio__label {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 81px 0px 41px;
+}
+.portfolio__content {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio__info {
+    flex: 0 1 349px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.portfolio__images {
+    flex: 0 1 635px;
+    display: flex;
+    margin-left: 10px;
+}
+.portfolio__images > div:first-child {
+    margin-right: 30px;
+}
+.portfolio__images > div > div:first-child {
+    margin-bottom: 26px;
+}
+.portfolio__arrows span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: solid black;
+    border-width: 0 1px 1px 0;
+}
+.portfolio__arrows span:first-child {
+    transform: rotate(135deg);
+}
+.portfolio__arrows span:last-child {
+    transform: rotate(-45deg);
+}
+
+/* Footer || Contacts */
+.footer {
+    background-color: rgba(255, 250, 242, 1);
+}
+.footer__wrapper {
+    padding: 93px 10px 70px;
+}
+.footer__title {
+    margin-bottom: 51px;
+}
+.footer__content {
+    display: flex;
+    max-width: 928px;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+.footer__content li {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 14px;
+}
+.footer__arrow {
+    text-align: right;
+}
+.footer__arrow a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    transform: rotate(-135deg);
+}

@@ -1,0 +1,230 @@
+/* Adaptive  */
+
+@media (max-width: 992px) {
+    /* Skills section */
+    .skills__info {
+        flex: 0 1 435px;
+        margin-left: 10px;
+    }
+    .skills__info_graph,
+    .skills__info_text {
+        height: 24px;
+        width: 246px;
+    }
+    .graph1 {
+        width: 181px;
+    }
+    .graph2 {
+        width: 151px;
+    }
+    .graph3 {
+        width: 86px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Menu-Burger */
+    .menu__list {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-color: rgba(198, 108, 73, 0.9);
+        transition-duration: 0.5s;
+    }
+    .menu__list li {
+        margin: 20px 0px 0px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .menu__list li:first-child {
+        margin: 20px 0px 0px;
+    }
+    .menu-burger {
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        z-index: 23;
+    }
+    .menu-burger span {
+        display: block;
+        height: 2px;
+        background-color: #fff;
+    }
+    .menu-burger::before,
+    .menu-burger::after {
+        content: "";
+        display: block;
+        position: relative;
+        height: 2px;
+        background-color: #fff;
+        transition-duration: 0.5s;
+    }
+    .menu-burger::after {
+        bottom: -18px;
+    }
+    .menu-burger::before {
+        top: 12px;
+    }
+
+    /* Menu-Burger Active */
+    .menu-burger.active {
+        position: fixed;
+    }
+    .menu-burger.active span {
+        opacity: 0;
+    }
+    .menu-burger.active::after {
+        bottom: -8px;
+        transform: rotate(-45deg);
+    }
+    .menu-burger.active::before {
+        transform: rotate(45deg);
+    }
+    .menu__list.active {
+        transform: translateX(-100%);
+    }
+
+    /* ///////////////// */
+
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .title {
+        font-weight: 600;
+    }
+    /* Header */
+    .header__wrapper {
+        padding: 36px 10px 50px;
+        text-align: center;
+    }
+    .menu {
+        margin-bottom: 50px;
+    }
+    .menu__logo {
+        margin: 0 auto;
+    }
+    .header__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .header__sub-title {
+        margin: 13px 0 41px;
+        font-size: 13px;
+    }
+    .header__link {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    /* About section */
+    .about__wrapper {
+        padding: 25px 10px;
+        text-align: center;
+    }
+    .about__title {
+        margin-bottom: 20px;
+    }
+    .about__text {
+        text-align: left;
+    }
+    /* Skills  section*/
+    .skills__wrapper {
+        padding: 25px 10px;
+    }
+    .skills__title {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .skills__content {
+        display: block;
+    }
+    .skills__image {
+        max-width: 224px;
+        margin: 0px auto;
+        height: 218px;
+    }
+    .skills__info {
+        margin: 25px 0px 0px;
+    }
+    .skills__info > div:first-child {
+        margin-bottom: 31px;
+    }
+    .skills__info > div {
+        margin-bottom: 10px;
+    }
+    .skills__info_text,
+    .skills__info_title {
+        font-size: 12px;
+    }
+    .skills__info_graph > div,
+    .skills__info_graph,
+    .skills__info_text {
+        height: 18px;
+    }
+
+    /* Portfolio section */
+    .portfolio__wrapper {
+        padding: 25px 10px;
+        text-align: center;
+    }
+    .portfolio__label {
+        margin: 19px 0px 15px;
+        font-size: 14px;
+    }
+    .portfolio__content {
+        display: block;
+    }
+    .portfolio__arrows {
+        display: none;
+    }
+    .portfolio__images {
+        margin: 25px 0px 0px;
+    }
+    .portfolio__images > div:first-child {
+        margin-right: 15px;
+    }
+    .portfolio__images > div > div:first-child {
+        margin-bottom: 13px;
+    }
+    /* Footer || Contacts */
+    .footer__wrapper {
+        padding: 25px 10px 20px;
+        position: relative;
+    }
+    .footer__title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .footer__content li {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 19px;
+    }
+    .footer__content ul:last-child li {
+        margin-bottom: 9px;
+    }
+    .footer__content {
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+    .footer__content ul {
+        margin-bottom: 30px;
+        flex: 0 1 50%;
+    }
+    .footer__arrow {
+        position: absolute;
+        bottom: 60px;
+        right: 30px;
+    }
+}
